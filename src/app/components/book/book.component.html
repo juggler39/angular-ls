@@ -1,6 +1,4 @@
-<p>home works!</p>
-
-<mat-card *ngFor="let book of books$ | async">
+<mat-card>
   <mat-card-header
     ><mat-card-title> {{ book.title }}</mat-card-title>
   </mat-card-header>
@@ -10,7 +8,4 @@
     [src]="book.thumbnailSmallUrl"
     onerror="this.src='assets/images/1.png'"
   />
-  <mat-card-content>
-    <p>{{ book.synopsis }}</p>
-  </mat-card-content>
 </mat-card>
